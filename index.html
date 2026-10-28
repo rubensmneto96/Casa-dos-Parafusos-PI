@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa dos Parafusos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="head-text">
+            <p>CASA DOS PARAFUSOS <span>&#8226;</span> FERRAMENTAS, FIXADORES E EPIs</p>
+    </div>
+    <nav>
+        <div id="icone">
+            <img class="logo" src="/img/image 1.svg" alt="logo">
+        </div>
+
+        <div class="navbar" id="myTopnav">
+            <a href="#home" class="active">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Quem somos</a>                
+            <a href="#diferenciais">Diferenciais</a>
+            <a href="#contato">Contato</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    
+<script>
+    
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+    }
+
+</script>
+        
+    
+</body>
+</html>
