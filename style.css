@@ -12,7 +12,7 @@ body {
 
 #head-text p {
     font-size: 14px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Fragment Mono", monospace;
     color: #B6B0B9;
     text-align: center;
     font-weight: 600;
@@ -55,7 +55,7 @@ nav a {
     padding: 1em 2em;
     text-decoration: none;
     transition: background-color 150ms ease;
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Fragment Mono", monospace;
     font-weight: bold;
 }
 
@@ -67,7 +67,7 @@ nav a {
 }
 
 .botaoAtendimento a {
-    font-family:'Courier New', Courier, monospace;
+    font-family: "Fragment Mono", monospace;
     font-weight: bold;
 }
 
@@ -104,6 +104,24 @@ nav a {
     display: none;
 }
 
+footer {
+    background-color: #09090C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    padding-right: 4em;
+}
+
+footer p {
+    font-family: "Fragment Mono", monospace;
+    font-size: 12px;
+    font-weight: 400;
+    color: #B6B0B9;
+}
+
 @media (max-width: 800px) {
     
     #open-sidebar-btn, #close-sidebar-btn {
@@ -116,7 +134,7 @@ nav a {
 
     #head-text p {
         font-size: 10px;
-        font-family:'Courier New', Courier, monospace;
+        font-family: "Fragment Mono", monospace;
         color: #B6B0B9;
         text-align: center;
     }
@@ -160,6 +178,11 @@ nav a {
     nav a {
         width: 100%;
         padding-left: 2.5em;
+    }
+
+    footer img{
+        padding-right: 1em;
+        padding-left: 2em;
     }
 
 }
