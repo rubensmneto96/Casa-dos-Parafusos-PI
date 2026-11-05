@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="head-text">
+   <header>
+     <div id="head-text">
             <p>CASA DOS PARAFUSOS <span>&#8226;</span> FERRAMENTAS, FIXADORES E EPIs</p>
     </div>
 
@@ -32,25 +33,69 @@
                         <button id="close-sidebar-btn" onclick="closeSidebar()">
                             <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 384 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ede8e8" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
                     </li>
-                    <li class="home-li"><a href="#home">Início</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#sobre">Quem somos</a></li>
-                    <li><a href="#diferenciais">Diferenciais</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><button class="botaoAtendimento"><a href="#atendimento">Falar com a loja</a></button></li>
-                </ul>
+                   <li class="home-li"><a href="#home">Início</a></li>
+                   <li><a href="#produtos">Produtos</a></li>
+                   <li><a href="#sobre">Quem somos</a></li>
+                   <li><a href="#diferenciais">Diferenciais</a></li>
+                   <li><a href="#contato">Contato</a></li>
+                   <li><button class="botaoAtendimento"><a href="#atendimento">Falar com a loja</a></button></li>
+               </ul>
+           </div>
+       </nav>
+
+       <div id="overlay" onclick="closeSidebar()"></div>
+
+    </section>
+   </header>
+
+    <main id="main-hero">
+        <section class="hero">
+            <div class="background-hero">
+                <img src="/img/hero-parafuso.jpg" alt="hero-parafuso" class="bg-hero-img">
+                <div class="hero-text">
+                    <h3>SUA SOLUÇÃO EM FIXAÇÃO</h3>
+                    <h1 class="text-white">O encaixe perfeito</h1>
+                    <h1 class="text-red">para todo projeto.</h1>
+                    <p>Parafusos, porcas, arruelas, ferramentas e EPIs.</p>
+                    <p>Conheça nossas linhas e fale diretamente com a equipe.</p>
+                    <div class="buttons">
+                        <button class="botaoAtendimento">Conhecer produtos</button>
+                        <button class="botao">Quem somos</button>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </section>
 
-        <div id="overlay" onclick="closeSidebar()"></div>
-
-     </section>
-
-     <footer>
+        <section class="products-type">
+            <div class="section-text">
+                <h3>LINHAS QUE VOCÊ ENCONTRA</h3>
+                <h1>Um universo de soluções.</h1>
+            </div>
+            <div class="cards-products">
+                <div class="card">
+                    <p>🔩</p>
+                    <p>Parafusos</p>
+                </div>
+                <div class="card">
+                    <p>⚙</p>
+                    <p>Porcas & <br> arruelas</p>
+                </div>
+                <div class="card">
+                    <p>🛠</p>
+                    <p>Ferramentas</p>
+                </div>
+                <div class="card">
+                    <p>🧤</p>
+                    <p>EPIs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
         <img src="/img/logo-footer.svg" alt="logo-footer">
         <p>Casa dos Parafusos • Projeto acadêmico demonstrativo</p>
      </footer>
-    
 <script>
     const navbar = document.getElementById('navbar');
 
