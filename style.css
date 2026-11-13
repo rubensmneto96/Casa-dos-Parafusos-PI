@@ -59,6 +59,7 @@ nav a {
 }
 
 .botaoAtendimento {
+    display: flex;
     background-color: #FA102C;
     border: none;
     border-radius: 10px;
@@ -66,13 +67,27 @@ nav a {
     font-family: "Fragment Mono", monospace;
     font-weight: bold;
     color: #ddd;
+    padding: 1em 2em;
+}
+
+.botaoAtendimento a {
+    text-decoration: none;
+    color: #ddd;
 }
 
 .botaoAtendimento:hover {
     background-color: #ddd;
-    color: #09090C;
     cursor: pointer;
 }
+
+.botaoAtendimento:hover a {
+    color: #09090C;
+}
+
+.buttons {
+        display: flex;
+        gap: 10px;
+    }
 
 #open-sidebar-btn {
     display: none;
@@ -120,6 +135,7 @@ nav a {
 .hero-text h3 {
     color: #e94c5e;
     padding-bottom: 2em;
+    font-size: 14px;
 }
 
 .hero-text .text-white {
@@ -173,6 +189,7 @@ nav a {
 .products-type h3 {
     color: #e94c5e;
     padding-bottom: 1em;
+    font-size: 14px;
 }
 
 .products-type h1 {
@@ -254,18 +271,62 @@ nav a {
 }
 
 .products-high button {
-    border: none;
-    padding: 1em 2em;
     margin-bottom: 2em;
 }
 
-.products-high button a {
-    text-decoration: none;
+.contato-footer {
+    display: flex;
+    background-color: #67091A;
+    width: 100%;
+    height: 100%;
+    font-family: "Fragment Mono", monospace;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.contato-footer h1 {
     color: #ddd;
 }
 
-.products-high button:hover a {
-    color: #09090C;
+.contato-footer h3 {
+    color: #e94c5e;
+    font-size: 14px;
+}
+
+.contato-footer .contato-desc {
+    padding-bottom: 1em;
+}
+
+.contato-footer .section-text {
+    padding-bottom: 2em;
+}
+
+.contato-card {
+    width: 18rem;
+    display: flex;
+    background-color: #1C1B21;
+    border-radius: 10px;
+    border: none;
+    border-width: 2px;
+    padding: 2px 16px;
+    margin-left: 10em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato-card h2 {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.contato-card p {
+    color: #B6B0B9;
+    font-size: 12px;
+}
+
+.contato-card a {
+    text-decoration: none;
 }
 
 footer {
@@ -284,6 +345,31 @@ footer p {
     font-size: 12px;
     font-weight: 400;
     color: #B6B0B9;
+}
+
+.products-catalog {
+    background-color: #16151A;
+    width: 100%;
+    height: 100%;
+    font-family: "Fragment Mono", monospace;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.products-catalog h1 {
+    color: #ddd;
+}
+
+.product-card {
+    width: 15rem;
+    background-color: #1C1B21;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #39343B;
+    padding: 2px 16px;
+    margin-right: 1em;
 }
 
 @media (max-width: 800px) {
@@ -366,7 +452,7 @@ footer p {
     }
 
     .buttons {
-        display: flex;
+        display: block;
     }
 
     .buttons .botaoAtendimento {
@@ -394,6 +480,41 @@ footer p {
         padding-left: 2em;
     }
 
+    .card-high {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato-footer .section-text {
+        align-items: center;
+    }
+
+    .contato-footer h1 {
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato-footer h3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato-footer button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (width >= 320) {
