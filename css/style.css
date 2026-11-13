@@ -1,3 +1,5 @@
+/* index.html */
+
 body {
     margin: 0;
     padding: 0;
@@ -347,6 +349,8 @@ footer p {
     color: #B6B0B9;
 }
 
+/* produtos.html */
+
 .products-catalog {
     background-color: #16151A;
     width: 100%;
@@ -371,6 +375,8 @@ footer p {
     padding: 2px 16px;
     margin-right: 1em;
 }
+
+/* responsividade */
 
 @media (max-width: 800px) {
     
