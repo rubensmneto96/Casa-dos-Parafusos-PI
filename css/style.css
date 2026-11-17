@@ -43,6 +43,7 @@ nav .home-li {
 
 nav li {
     display: flex;
+    padding-left: 1em;
 }
 
 nav a:hover {
@@ -184,7 +185,7 @@ nav a {
     position: relative;
 }
 
-.section-text {
+.products-type .section-text {
     padding-left: 15%;
 }
 
@@ -228,6 +229,10 @@ nav a {
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
+}
+
+.products-high .section-text {
+    padding-left: 15%;
 }
 
 .products-high h1 {
@@ -292,7 +297,7 @@ nav a {
 }
 
 .contato-footer h3 {
-    color: #e94c5e;
+    color: #a09fa0;
     font-size: 14px;
 }
 
@@ -302,6 +307,7 @@ nav a {
 
 .contato-footer .section-text {
     padding-bottom: 2em;
+    padding-left: 15%;
 }
 
 .contato-card {
@@ -363,6 +369,89 @@ footer p {
 
 .products-catalog h1 {
     color: #ddd;
+    text-align: center;
+}
+
+.products-catalog .section-text {
+    padding-bottom: 20px;
+}
+
+.products-catalog .cards-products {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-auto-flow: column;
+    gap: 1em;
+    align-content: center;
+    justify-items: center;
+    
+}
+
+.products-catalog .cards-products .img-container {
+    display: flex;
+    max-width: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.products-catalog .cards-products .img-container img {
+    width: 100%;
+    object-fit: none;
+}
+
+.products-catalog .cards-products .product-card .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-catalog .cards-products .product-card .botaoAtendimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #088138;
+}
+
+.products-catalog .cards-products .product-card .botaoAtendimento:hover {
+    background-color: #ddd;
+}
+
+.botaoEmail {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa5a10;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 150ms ease;
+    font-family: "Fragment Mono", monospace;
+    font-weight: bold;
+    color: #ddd;
+    padding: 1em 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botaoEmail:hover {
+    cursor: pointer;
+    background-color: #ddd;
+    color: #09090C;
+}
+
+.botaoEmail a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.botaoEmail:hover a {
+    color: #09090C;
+}
+
+.botaoEmail svg {
+    padding-left: 10px;
+}
+
+.botaoEmail:hover svg path {
+    fill: rgb(28, 28, 28);
 }
 
 .product-card {
@@ -374,6 +463,17 @@ footer p {
     border-color: #39343B;
     padding: 2px 16px;
     margin-right: 1em;
+    padding-bottom: 1em;
+}
+
+.product-card p {
+    text-align: center;
+    color: #B6B0B9;
+}
+
+.product-card .botaoAtendimento {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* responsividade */
@@ -442,7 +542,8 @@ footer p {
     }
 
     .hero-text {
-        align-items: center;
+        right: 15%;
+        text-align: center;
     }
 
     .hero-text h3 {
@@ -455,6 +556,10 @@ footer p {
 
     .hero-text p {
         font-size: small;
+    }
+
+    .hero-text .buttons {
+        display: flex;
     }
 
     .buttons {
@@ -495,10 +600,11 @@ footer p {
     .contato-footer {
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
 
     .contato-footer .section-text {
-        align-items: center;
+        padding-right: 15%;
     }
 
     .contato-footer h1 {
@@ -520,6 +626,11 @@ footer p {
     .contato-card {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .products-catalog .cards-products {
+        display: flex;
+        flex-direction: column;
     }
 }
 
