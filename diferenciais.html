@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa dos Parafusos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+     <div id="head-text">
+            <p>CASA DOS PARAFUSOS <span>&#8226;</span> FERRAMENTAS, FIXADORES E EPIs</p>
+    </div>
+
+    <button id="open-sidebar-btn" onclick="openSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ede8e8" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+    </button>
+
+     <section id="navbar-section">
+
+        <div id="icone">
+            <img class="logo" src="img/logo-header.svg" alt="logo">
+        </div>
+
+        <nav id="navbar">
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <button id="close-sidebar-btn" onclick="closeSidebar()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 384 512"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ede8e8" d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+                    </li>
+                   <li class="home-li"><a href="/index.html">Início</a></li>
+                   <li><a href="/produtos.html">Produtos</a></li>
+                   <li><a href="/sobre.html">Quem somos</a></li>
+                   <li><a href="/diferenciais.html" class="selected">Diferenciais</a></li>
+                   <li><a href="/contato.html">Contato</a></li>
+                   <li><button class="botaoAtendimento"><a href="https://wa.me//5519996748131?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20WD-40!">Falar com a loja</a></button></li>
+               </ul>
+           </div>
+       </nav>
+
+       <div id="overlay" onclick="closeSidebar()"></div>
+
+    </section>
+   </header>
+
+   <main>
+
+    <section class="diferencial">
+            <div class="section-text">
+                <h1>Nosso diferencial</h1>
+
+                <div class="diff-div">
+                    <div class="quality">
+                        <div class="diff-desc">
+                            <h3>Trabalhamos apenas com produtos da melhor qualidade. <br>
+                             Queremos o melhor para nossos clientes!</h3>
+                        </div>
+
+                        <div class="icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(49, 90, 163)" d="M320.3 192L235.7 51.1C229.2 40.3 215.6 36.4 204.4 42L117.8 85.3C105.9 91.2 101.1 105.6 107 117.5L176.6 256.6C146.5 290.5 128.3 335.1 128.3 384C128.3 490 214.3 576 320.3 576C426.3 576 512.3 490 512.3 384C512.3 335.1 494 290.5 464 256.6L533.6 117.5C539.5 105.6 534.7 91.2 522.9 85.3L436.2 41.9C425 36.3 411.3 40.3 404.9 51L320.3 192zM351.1 334.5C352.5 337.3 355.1 339.2 358.1 339.6L408.2 346.9C415.9 348 418.9 357.4 413.4 362.9L377.1 398.3C374.9 400.5 373.9 403.5 374.4 406.6L383 456.5C384.3 464.1 376.3 470 369.4 466.4L324.6 442.8C321.9 441.4 318.6 441.4 315.9 442.8L271.1 466.4C264.2 470 256.2 464.2 257.5 456.5L266.1 406.6C266.6 403.6 265.6 400.5 263.4 398.3L227.1 362.9C221.5 357.5 224.6 348.1 232.3 346.9L282.4 339.6C285.4 339.2 288.1 337.2 289.4 334.5L311.8 289.1C315.2 282.1 325.1 282.1 328.6 289.1L351 334.5z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="div-line"></div>
+                    
+                    <div class="price">
+                        <div class="diff-desc">
+                            <h3>Os melhores preços!<br>
+                            Preço justo, que cabe no bolso!</h3>
+                        </div>
+
+                        <div class="icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(19, 145, 106)" d="M296 88C296 74.7 306.7 64 320 64C333.3 64 344 74.7 344 88L344 128L400 128C417.7 128 432 142.3 432 160C432 177.7 417.7 192 400 192L285.1 192C260.2 192 240 212.2 240 237.1C240 259.6 256.5 278.6 278.7 281.8L370.3 294.9C424.1 302.6 464 348.6 464 402.9C464 463.2 415.1 512 354.9 512L344 512L344 552C344 565.3 333.3 576 320 576C306.7 576 296 565.3 296 552L296 512L224 512C206.3 512 192 497.7 192 480C192 462.3 206.3 448 224 448L354.9 448C379.8 448 400 427.8 400 402.9C400 380.4 383.5 361.4 361.3 358.2L269.7 345.1C215.9 337.5 176 291.4 176 237.1C176 176.9 224.9 128 285.1 128L296 128L296 88z"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="div-line"></div>
+
+                    <div class="customer-service">
+                        <div class="diff-desc">
+                            <h3>Tem dúvidas sobre algum produto?<br>
+                            Te ajudamos a escolher o que melhor atende sua necessidade!</h3>
+                        </div>
+
+                        <div class="icon-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(191, 191, 191)" d="M300.9 117.2L184.3 246.8C179.7 251.9 179.9 259.8 184.8 264.7C215.3 295.2 264.8 295.2 295.3 264.7L327.1 232.9C331.3 228.7 336.6 226.4 342 226C348.8 225.4 355.8 227.7 361 232.9L537.6 408L608 352L608 64L496 128L472.2 112.1C456.4 101.6 437.9 96 418.9 96L348.5 96C347.4 96 346.2 96 345.1 96.1C328.2 97 312.3 104.6 300.9 117.2zM148.6 214.7L255.4 96L215.8 96C190.3 96 165.9 106.1 147.9 124.1L32 256L32 608L176 472L188.4 482.3C211.4 501.5 240.4 512 270.3 512L286 512L279 505C269.6 495.6 269.6 480.4 279 471.1C288.4 461.8 303.6 461.7 312.9 471.1L353.9 512.1L362.9 512.1C382 512.1 400.7 507.8 417.7 499.8L391 473C381.6 463.6 381.6 448.4 391 439.1C400.4 429.8 415.6 429.7 424.9 439.1L456.9 471.1L474.4 453.6C483.3 444.7 485.9 431.8 482 420.5L344.1 283.7L329.2 298.6C279.9 347.9 200.1 347.9 150.8 298.6C127.8 275.6 126.9 238.7 148.6 214.6z"/></svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+   </main>
+   
+    
+    <footer>
+        <img src="img/logo-footer.svg" alt="logo-footer">
+        <p>Casa dos Parafusos • Projeto acadêmico demonstrativo</p>
+     </footer>
+<script>
+    const navbar = document.getElementById('navbar');
+
+    function openSidebar() {
+        navbar.classList.add('show');
+    }
+
+    function closeSidebar() {
+        navbar.classList.remove('show');
+    }
+
+</script>
+        
+    
+</body>
+</html>
