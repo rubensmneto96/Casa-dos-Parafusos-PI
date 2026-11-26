@@ -620,18 +620,6 @@ footer p {
     align-items: center;
 }
 
-.card-horarios {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    justify-content: center;
-    background: linear-gradient(to right, #cf0b22, #67091A);
-    min-height: 80vh;
-    width: 80%;
-    margin-bottom: 2em;
-    border-radius: 10px;
-}
-
 .horarios .section-text {
     display: flex;
     flex-direction: column;
@@ -648,8 +636,8 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30%;
-    padding-bottom: 50%;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
 .horarios .section-text .horario .dia {
@@ -876,6 +864,68 @@ footer p {
     50%, 70%  { transform: translateX(-50%); }
     75%, 95%  { transform: translateX(-75%); }
     100%      { transform: translateX(0%); }
+}
+
+/* contato.html */
+
+.contato .section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fragment Mono", monospace;
+    font-weight: bold;
+}
+
+.contato .section-text h1 {
+    color: #ddd;
+    margin-top: 2em;
+}
+
+.card-contato {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-content: center;
+    background: linear-gradient(to right, #cf0b22, #67091A);
+    min-height: 80vh;
+    width: 80%;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    padding-top: 4em;
+}
+
+
+.card-contato h2 {
+    text-align: center;
+    color: #ddd;
+    padding-bottom: 1em;
+}
+
+.whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp .botaoAtendimento {
+    background-color: #088138;
+}
+
+.whatsapp .botaoAtendimento:hover {
+    background-color: #ddd;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
 }
 
 /* responsividade */
@@ -1114,6 +1164,25 @@ footer p {
     }
 
     .div-line {
+        width: 80%;
+    }
+
+    .card-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-contato h2 {
+        font-size: 16px;
+    }
+
+    .card-contato h3 {
+        font-size: 12px;
+    }
+
+    .card-contato button {
         width: 80%;
     }
 }
