@@ -569,6 +569,15 @@ footer p {
     padding: 20px;
 }
 
+.horarios .section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fragment Mono", monospace;
+    font-weight: bold;
+}
+
 /* difenciais.html */
 
 .diferencial .section-text {
